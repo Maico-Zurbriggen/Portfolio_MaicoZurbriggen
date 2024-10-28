@@ -5,86 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200..700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Maico Zurbriggen</title>
 </head>
 <body>
-    <header>
-        <h1>Yo Soy Maico Zurbriggen</h1>
-        <p>Desarrollador React</p>
-        <nav>
-            <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.instagram.com/tu-perfil" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://wa.me/tu-numero" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="mailto:tu-email@gmail.com">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </nav>
-        <nav>
-            <a href="">Sobre Mí</a>
-            <a href="">Proyectos</a>
-            <a href="">Educación</a>
-            <a href="">Lenguajes</a>
-        </nav>
+    <img src="/assets/img/rahul-mishra-mZRCMPbJSPc-unsplash.jpg" alt="Imagen de Fondo" class="fondo">
+    <header id="inicio">
+        <div class="container_vertical">
+            <h1>Yo Soy Maico Zurbriggen</h1>
+            <p>Desarrollador Móvil</p>
+            <nav class="navegacion">
+                <a href="#sobreMi">Sobre Mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#educacion">Educación</a>
+                <a href="#lenguajes">Lenguajes</a>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <h2>Sobre Mí</h2>
-        <div>
-            <img src="" alt="Imagen presentacion - Maico Zurbriggen">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi pariatur qui sunt distinctio aliquid voluptatem vitae sed esse deserunt, porro repudiandae neque molestiae natus saepe magni similique consequatur, tenetur dicta.</p>
+    <section id="sobreMi">
+        <div class="container_vertical">
+            <h2>Sobre Mí</h2>
+            <div class="container_horizontal">
+                <img src="/assets/img/IMG-20240115-WA0004.jpg" alt="Imagen presentacion - Maico Zurbriggen">
+                <div class="container_vertical">
+                    <p class="texto_sobreMi">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi pariatur qui sunt distinctio aliquid voluptatem vitae sed esse deserunt, porro repudiandae neque molestiae natus saepe magni similique consequatur, tenetur dicta.</p>
+                    <p class="texto_sobreMi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorem maiores numquam repellendus! Impedit error ducimus tempora provident aliquid voluptatum, quidem quia cumque aspernatur id eius dignissimos voluptates debitis labore.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section>
-        <h2>Proyectos</h2>
-        <div>
-            <img src="" alt="Proyecto Luigi's">
-            <h3>Luigi's</h3>
-            <p>Septiembre 2024</p>
+    <section id="proyectos">
+        <div class="container_vertical">
+            <h2>Proyectos</h2>
+            <div class="container_grid">
+                <a href="https://github.com/Maico-Zurbriggen/Luigi-s">
+                    <div class="container_vertical proyectos">
+                    <img src="/assets/img/navbar-brand.svg" alt="Proyecto Luigi's" class="imagen_proyecto">
+                    <h3>Luigi's Pizzería</h3>
+                    <p>Septiembre 2024</p>
+                    <div class="container_horizontal herramientas">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i> 
+                    </div>
+                </div>
+            </a>
+            </div>
         </div>
     </section>
 
-    <section>
-        <div>
-            <p>2023 - Actualidad</p>
-            <h3>Ingeniería en Sistemas de Información</h3>
-            <p>UTN - San Francisco</p>
+    <section id="educacion">
+        <div class="container_vertical">
+            <h2>Educación</h2>
+            <div class="container_grid">
+                <div>
+                    <p>2023 - Actualidad</p>
+                    <h3>Ingeniería en Sistemas de Información</h3>
+                    <p>UTN - San Francisco</p>
+                </div>
+                <div>
+                    <p>2016 - 2022</p>
+                    <h3>Tecnicatura Electrónica</h3>
+                    <p>IPET 50 - E.F.O</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section>
-        <div>
-            <h3>Inglés</h3>
-            <p>Básico</p>
-        </div>
-        <div>
-            <h3>Español</h3>
-            <p>Nativo</p>
+    <section id="lenguajes">
+        <div class="container_vertical">
+            <h2>Lenguajes</h2>
+            <div class="container_grid">
+                <div class="container_horizontal lenguaje">
+                    <h3>Inglés</h3>
+                    <p>Básico</p>
+                </div>
+                <div class="container_horizontal lenguaje">
+                    <h3>Español</h3>
+                    <p>Nativo</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024, <span>Maico Zurbriggen</span> Todos los derechos reservados</p>
-        <nav>
-            <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">
-                <i class="fab fa-linkedin"></i>
+        <div class="container_vertical">
+            <a href="#inicio" class="container_horizontal texto_footer">
+                <p>&copy; 2024, Maico Zurbriggen | Todos los derechos reservados</p>
+                <i class="fas fa-arrow-up"></i>
             </a>
-            <a href="https://www.instagram.com/tu-perfil" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://wa.me/tu-numero" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="mailto:tu-email@gmail.com">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </nav>
+            <nav class="navegacion">
+                <a href="https://www.linkedin.com/in/maico-zurbriggen-2242902a4" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/maicozurbriggen/profilecard/?igsh=MWV1MGNmb3Qwa2tmNw==" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/3564362360" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:zurbriggenmaico1@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/Maico-Zurbriggen" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </nav>
+        </div>
     </footer>
     
 </body>
