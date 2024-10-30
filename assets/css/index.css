@@ -1,61 +1,24 @@
+/*VARIABLES COLORES Y FUENTE*/
 :root{
     --blue: #79A9F5;
-    --indigo: #C45F90;
-    --purple: #A16AE8;
-    --pink: #FC8BC0;
-    --red: #F85C70;
-    --orange: #FF8882;
-    --yellow: #FAD02C;
-    --green: #A3C14A;
-    --teal: #20c997;
-    --cyan: #47D8E0;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #bc8c4c;
-    --secondary: #6c757d;
-    --success: #A3C14A;
-    --info: #47D8E0;
-    --warning: #FAD02C;
-    --danger: #F85C70;
     --light: #f8f9fa;
     --dark: #212529;
     --oswald: "Oswald", sans-serif;
 }
 
+/*AJUSTE PARA EL CALCULO DEL TAMAÑO DE LOS ELEMENTOS*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/*DECLARAMOS QUE TODA LA PAGINA USARA NUESTRA FUENTE*/
 html {
     font-family: var(--oswald);
 }
 
-h1,h2,h3,p{
-    margin: .5rem 0;
-}
-h2{
-    margin-bottom: 2rem;
-}
-
-a{
-    text-decoration: none;
-    color: var(--light);
-    padding: 1rem;
-    border-radius: .2rem;
-}
-a:hover{
-    background-color: rgba(70, 120, 200, 5);
-}
-
-img{
-    width: 15rem;
-    height: auto;
-    margin-right: 2rem;
-}
-
+/*DEFINIMOS ESTILOS GENERALES PARA EL BODY Y EL POSITION RELATIVE, PARA UBICAR LA IMAGEN DE FONDO*/
 body {
     position: relative;
     margin: 0;
@@ -65,6 +28,7 @@ body {
     color: var(--dark);
 }
 
+/*DEFINIMOS ESTILOS PARA NUESTRA IMAGEN DE FONDO*/
 .fondo{
     position: absolute;
     top: 0;
@@ -75,7 +39,47 @@ body {
     z-index: -1;
 }
 
+/*MARGEN A LOS ENCABEZADOS Y PARRAFOS SOLO ARRIBA Y ABAJO*/
+h1,h2,h3,p{
+    margin: .5rem 0;
+}
+
+/*DEFINIMOS ESTILO GENERAL PARA LOS ENLACES Y SU HOVER*/
+a{
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--light);
+    border-radius: .2rem;
+}
+a:hover{
+    background-color: rgba(70, 120, 200, 5);
+}
+
+/*DEFINIMOS ESTILO GENERAL PARA LAS IMAGENES*/
+img{
+    width: 15rem;
+    height: auto;
+    margin-right: 2rem;
+}
+
+/*ESTILOS GENERALES PARA LAS NAVEGACIONES TANTO SUPERIOR COMO REDES*/
+.navegacion{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 0;
+    border-bottom: var(--light) solid .1rem;
+    border-top: var(--light) solid .1rem;
+}
+
+/*HEADER*/
 header{
+    display: flex;
+    flex-direction: column;
+}
+.texto-header{
+    text-align: center;
     color: var(--light);
 }
 
@@ -103,18 +107,6 @@ header .container_vertical, footer .container_vertical{
 .container_grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
-
-.navegacion{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 1rem 0;
-}
-header .navegacion{
-    border-bottom: var(--light) solid .1rem;
-    border-top: var(--light) solid .1rem;
 }
 
 .texto_sobreMi{
