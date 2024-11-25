@@ -23,11 +23,13 @@
             <h1>Yo Soy Maico Zurbriggen</h1>
             <p>Desarrollador Móvil</p>
         </div>
-        <nav class="navegacion">
+        <nav class="navegacion" id="navbar">
             <a href="#sobreMi">Sobre Mí</a>
             <a href="#proyectos">Proyectos</a>
             <a href="#educacion">Educación</a>
+            <a href="#cursos">Cursos</a>
             <a href="#lenguajes">Lenguajes</a>
+            <a href="#redes">Contacto</a>
         </nav>
     </header>
 
@@ -37,8 +39,9 @@
         <div class="container">
             <img src="/assets/img/IMG-20240115-WA0004.jpg" alt="Imagen presentacion - Maico Zurbriggen">
             <div class="texto-sobreMi">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi pariatur qui sunt distinctio aliquid voluptatem vitae sed esse deserunt, porro repudiandae neque molestiae natus saepe magni similique consequatur, tenetur dicta.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorem maiores numquam repellendus! Impedit error ducimus tempora provident aliquid voluptatum, quidem quia cumque aspernatur id eius dignissimos voluptates debitis labore.</p>
+                <p>Me encuentro estudiando Ingeniería en Sistemas de Información, finalizando el segundo año. Además estoy encaminandome hacia el desarrollo móvil. Realizando diversos cursos e involucrandome en proyectos para poner en práctica los conocimientos adquiridos.</p>
+                <p>HTML | CSS | JavaScript | React | React Native | NODE | Express | GIT | GITHUB | Visual Studio Code</p>
+                <p>Comunicación efectiva | Trabajo en equipo | Resolución de problemas | Adaptabilidad | Gestión del tiempo | Pensamiento Crítico | Creatividad</p>
             </div>
         </div>
     </section>
@@ -76,6 +79,28 @@
         </div>
     </section>
 
+    <section id="cursos">
+        <h2>Cursos</h2>
+        <div class="container">
+            <a href="certificado-html-y-css.html" class="curso abrir-modulo">
+                <h3>HTML Y CSS</h3>
+                <p>TodoCode Academy</p>
+            </a>
+            <a href="certificado-javascript.html" class="curso abrir-modulo">
+                <h3>JavaScript</h3>
+                <p>TodoCode Academy</p>
+            </a>
+        </div>
+    </section>
+
+    <!--Módulos para los certificados-->
+    <div id="modulo" class="modulo"> 
+        <div class="modulo-contenido"> 
+            <span class="cerrar">&times;</span> 
+            <iframe width="100%" height="780px" id="modulo-contenido"></iframe>
+        </div>
+    </div>
+
     <!--LENGUAJES-->
     <section id="lenguajes">
         <h2>Lenguajes</h2>
@@ -97,12 +122,12 @@
             <p>&copy; 2024, Maico Zurbriggen | Todos los derechos reservados</p>
             <i class="fas fa-arrow-up"></i>
         </a>
-        <nav class="navegacion">
+        <nav class="navegacion" id="redes">
             <a href="https://www.linkedin.com/in/maico-zurbriggen-2242902a4" target="_blank">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://www.instagram.com/maicozurbriggen/profilecard/?igsh=MWV1MGNmb3Qwa2tmNw==" target="_blank">
-                <i class="fab fa-instagram"></i>
+            <a href="assets/cv/MaicoZurbriggenCV.pdf" target="_blank">
+                <i class="fas fa-file-pdf"></i>
             </a>
             <a href="https://wa.me/3564362360" target="_blank">
                 <i class="fab fa-whatsapp"></i>
@@ -115,6 +140,8 @@
             </a>
         </nav>
     </footer>
+
+    <script src="/assets/js/index.js"></script>
     
 </body>
 </html>

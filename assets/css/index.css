@@ -30,6 +30,7 @@ body {
 
 /*DEFINIMOS ESTILOS PARA NUESTRA IMAGEN DE FONDO*/
 .fondo{
+    margin: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -80,6 +81,18 @@ section{
     border-top: var(--light) solid .1rem;
 }
 
+/*ESTILOS PARA FIJAR LA BARRA CUANDO DESAPARECE DE LA PANTALLA*/
+.fija{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    margin: 0;
+    background-color: var(--blue);
+    border-top: none;
+}
+
 /*ESTILOS PARA UN CONTENEDOR QUE ACOMODE LOS ELEMENTOS HORIZONTALMENTE*/
 .container{
     display: flex;
@@ -117,6 +130,39 @@ header{
 /*SECCION EDUCACION*/
 .educacion{
     padding-right: 2rem;
+}
+
+/*SECCION CURSOS*/
+.curso{
+    color: var(--dark);
+}
+
+/*MODULOS*/ 
+.modulo { 
+    display: none; 
+    position: fixed; 
+    z-index: 1001; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.4); 
+} 
+.modulo-contenido { 
+    margin: 0 auto;
+    width: 80%;
+} 
+.cerrar { 
+    color: var(--light); 
+    float: right; 
+    font-size: 40px; 
+    font-weight: bold; 
+} 
+.cerrar:hover, .cerrar:focus { 
+    color: black; 
+    text-decoration: none; 
+    cursor: pointer; 
 }
 
 /*SECCION LENGUAJES*/
