@@ -23,7 +23,8 @@
             <h1>Yo Soy Maico Zurbriggen</h1>
             <p>Desarrollador Móvil</p>
         </div>
-        <nav class="navegacion" id="navbar">
+        <button class="desplegable" id="desplegable">&#9776;</button>
+        <nav class="navegacion primera" id="navbar">
             <a href="#sobreMi">Sobre Mí</a>
             <a href="#proyectos">Proyectos</a>
             <a href="#educacion">Educación</a>
@@ -36,8 +37,8 @@
     <!--SOBRE MI-->
     <section id="sobreMi">
         <h2>Sobre Mí</h2>
-        <div class="container">
-            <img src="/assets/img/IMG-20240115-WA0004.jpg" alt="Imagen presentacion - Maico Zurbriggen">
+        <div class="container sobreMi">
+            <img src="/assets/img/IMG-20240115-WA0004.jpg" alt="Imagen presentacion - Maico Zurbriggen" class="miFoto">
             <div class="texto-sobreMi">
                 <p>Me encuentro estudiando Ingeniería en Sistemas de Información, finalizando el segundo año. Además estoy encaminandome hacia el desarrollo móvil. Realizando diversos cursos e involucrandome en proyectos para poner en práctica los conocimientos adquiridos.</p>
                 <p>HTML | CSS | JavaScript | React | React Native | NODE | Express | GIT | GITHUB | Visual Studio Code</p>
@@ -96,7 +97,7 @@
     <!--Módulos para los certificados-->
     <div id="modulo" class="modulo"> 
         <div class="modulo-contenido"> 
-            <span class="cerrar">&times;</span> 
+            <span id="cerrar" class="cerrar">&times;</span> 
             <iframe width="100%" height="780px" id="modulo-contenido"></iframe>
         </div>
     </div>

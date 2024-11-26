@@ -80,6 +80,20 @@ section{
     border-bottom: var(--light) solid .1rem;
     border-top: var(--light) solid .1rem;
 }
+.desplegable { /*ESTILOS PARA EL BOTON DE DESPLEGAR*/
+    background-color: transparent; 
+    border: none;
+    border-bottom: var(--light) solid .1rem;
+    border-top: var(--light) solid .1rem;
+    color: white; 
+    font-size: 24px;
+    font-weight: bold; 
+    display: none; /* Oculto por defecto */
+}
+.desplegable:hover{
+    cursor: pointer;
+    background-color: rgba(70, 120, 200, 5);
+}
 
 /*ESTILOS PARA FIJAR LA BARRA CUANDO DESAPARECE DE LA PANTALLA*/
 .fija{
@@ -97,6 +111,22 @@ section{
 .container{
     display: flex;
 }
+@media(max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+    .primera{
+        display: none;
+        flex-direction: column;
+    }
+    .desplegable{
+        display: block;
+    }
+    .primera.visible{
+        display: flex;
+        align-items: center;
+    }
+}
 
 /*HEADER*/
 header{
@@ -112,6 +142,17 @@ header{
 .texto-sobreMi{
     width: 60%;
 }
+.miFoto{
+    max-height: 318.4px;
+}
+@media(max-width: 768px) {
+    .sobreMi{
+        align-items: center;
+    }
+    .texto-sobreMi{
+        width: 100%;
+    }
+}
 
 /*SECCION PROYECTOS*/
 .proyecto{
@@ -125,6 +166,11 @@ header{
 }
 .herramientas{
     justify-content: center;
+}
+@media(max-width: 768px) {
+    .herramientas{
+        flex-direction: row;
+    }
 }
 
 /*SECCION EDUCACION*/
@@ -172,6 +218,12 @@ header{
 }
 .lenguaje h3{
     margin-right: 1rem;
+}
+
+@media(max-width: 768px) {
+    .lenguaje{
+        align-items: start;
+    }
 }
 
 /*FOOTER*/
