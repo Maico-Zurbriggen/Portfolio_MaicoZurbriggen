@@ -111,7 +111,7 @@ section{
 .container{
     display: flex;
 }
-@media(max-width: 768px) {
+@media(max-width: 768px) { /*CAMBIOS PARA PANTALLAS PEQUEÑAS*/
     .container{
         flex-direction: column;
     }
@@ -145,7 +145,7 @@ header{
 .miFoto{
     max-height: 318.4px;
 }
-@media(max-width: 768px) {
+@media(max-width: 768px) { /*CAMBIOS PARA PANTALLAS PEQUEÑAS*/
     .sobreMi{
         align-items: center;
     }
@@ -167,7 +167,7 @@ header{
 .herramientas{
     justify-content: center;
 }
-@media(max-width: 768px) {
+@media(max-width: 768px) { /*CAMBIO PARA PANTALLAS PEQUEÑAS*/
     .herramientas{
         flex-direction: row;
     }
